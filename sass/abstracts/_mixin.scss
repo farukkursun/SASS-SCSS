@@ -1,0 +1,10 @@
+@mixin box  ($backColor,$fontColor) {
+        width: 25%;
+        height: 200px;
+        border: $border;
+        border-radius: 5px;
+        background-color:$backColor;
+        color:$fontColor;
+        margin: 10px;
+    
+}

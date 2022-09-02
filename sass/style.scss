@@ -1,0 +1,76 @@
+@import "./components/header";
+
+@import "./abstracts/variables";
+@import "./components/banner";
+
+@import "./base/reset";
+@import "./abstracts/mixin";
+@import "./abstracts/extend";
+
+.cards {
+  display: flex;
+  .card1 {
+    @include box(brown, white);
+  }
+  .card2 {
+    @include box(rgb(200, 100, 100), yellow);
+  }
+  .card3 {
+    @include box(green, gray);
+  }
+  .card4 {
+    @include box(black, white);
+  }
+}
+
+$mode: 2;
+
+footer {
+  p {
+    @if $mode==2 {
+      background-color: lightcoral;
+    } @else if $mode==1 {
+      background-color: cornflowerblue;
+    } @else {
+      background-color: lightgreen;
+    }
+  }
+}
+
+// .socialBoxes {
+//   display: flex;
+//   @for $i from 1 through 5 {
+//     .social#{$i} {
+//       color: white;
+//       width: 20%;
+//       height: 100px;
+//       $renk: ($i + 10) * 5;
+//       background-color: lighten(rgb(138, 19, 75), $i * 10);
+//       font-size: $i * 1rem;
+
+//       //  background-color:rgb(100, 100, $renk);
+//     }
+//   }
+// }
+
+$temaRengi: (
+  "pink": rgb(195, 76, 183),
+  "green": rgb(76, 195, 94),
+  "blue": rgb(27, 96, 165),
+);
+@each $i, $renk in $temaRengi {
+  .container {
+    &.#{$i} {
+      background-color: $renk;
+    }
+  }
+}
+
+// array
+$renkler: #990000, #55004e, #0fa8a1, #121456, #64c217;
+
+@for $i from 1 through length($renkler) {
+  .social#{$i} {
+    background-color: nth($renkler, $i);
+  }
+}
