@@ -1,8 +1,8 @@
-@mixin box  ($backColor,$fontColor) {
+@mixin box  ($backColor,$fontColor,$bradius) {
         width: 25%;
         height: 200px;
         border: $border;
-        border-radius: 5px;
+        border-radius:$bradius;
         background-color:$backColor;
         color:$fontColor;
         margin: 10px;

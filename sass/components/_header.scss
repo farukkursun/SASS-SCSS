@@ -1,4 +1,4 @@
-@import "../abstracts/variables" ;
+@import "../abstracts/variables";
 
 header {
   display: flex;
@@ -27,6 +27,7 @@ header {
           &:hover {
             background-color: $secondryColor;
             border-radius: 10px;
+            padding: 10px 10px;
           }
         }
       }

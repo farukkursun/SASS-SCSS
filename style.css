@@ -25,6 +25,7 @@ header .nav ul li a {
 header .nav ul li a:hover {
   background-color: #dfa2c0;
   border-radius: 10px;
+  padding: 10px 10px;
 }
 
 .banner {
@@ -79,7 +80,7 @@ body {
   height: 200px;
   border: 2px solid gray;
   border-radius: 5px;
-  background-color: brown;
+  background-color: rgb(82, 30, 30);
   color: white;
   margin: 10px;
 }
@@ -87,7 +88,7 @@ body {
   width: 25%;
   height: 200px;
   border: 2px solid gray;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: rgb(200, 100, 100);
   color: yellow;
   margin: 10px;
@@ -96,16 +97,16 @@ body {
   width: 25%;
   height: 200px;
   border: 2px solid gray;
-  border-radius: 5px;
-  background-color: green;
-  color: gray;
+  border-radius: 20px;
+  background-color: rgb(60, 141, 60);
+  color: rgb(240, 227, 227);
   margin: 10px;
 }
 .cards .card4 {
   width: 25%;
   height: 200px;
   border: 2px solid gray;
-  border-radius: 5px;
+  border-radius: 30px;
   background-color: black;
   color: white;
   margin: 10px;
@@ -113,6 +114,45 @@ body {
 
 footer p {
   background-color: lightcoral;
+}
+
+.socialBoxes {
+  display: flex;
+}
+.socialBoxes .social1 {
+  color: white;
+  width: 20%;
+  height: 100px;
+  background-color: #a9175c;
+  font-size: 1rem;
+}
+.socialBoxes .social2 {
+  color: white;
+  width: 20%;
+  height: 100px;
+  background-color: #c91c6d;
+  font-size: 2rem;
+}
+.socialBoxes .social3 {
+  color: white;
+  width: 20%;
+  height: 100px;
+  background-color: #e1277f;
+  font-size: 3rem;
+}
+.socialBoxes .social4 {
+  color: white;
+  width: 20%;
+  height: 100px;
+  background-color: #e64691;
+  font-size: 4rem;
+}
+.socialBoxes .social5 {
+  color: white;
+  width: 20%;
+  height: 100px;
+  background-color: #ea66a4;
+  font-size: 5rem;
 }
 
 .container.pink {
@@ -125,26 +165,6 @@ footer p {
 
 .container.blue {
   background-color: rgb(27, 96, 165);
-}
-
-.social1 {
-  background-color: #990000;
-}
-
-.social2 {
-  background-color: #55004e;
-}
-
-.social3 {
-  background-color: #0fa8a1;
-}
-
-.social4 {
-  background-color: #121456;
-}
-
-.social5 {
-  background-color: #64c217;
 }
 
 /*# sourceMappingURL=style.css.map */
